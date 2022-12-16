@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset>
+    <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div>
+
+        <div class="div">
           <label for="surname">Surname:</label>
           <input
             type="text" id="surname"
             name="surname" autocomplete="off"
           >
         </div>
-        <div>
+
+        <div class="div">
           <label for="name">Name:</label>
           <input
             type="text" id="name"
@@ -28,7 +32,8 @@
             required
           >
         </div>
-        <div>
+
+        <div class="div">
           <label for="age">How old are You?</label>
           <input
             type="number" id="age"
@@ -36,14 +41,16 @@
             min="1" max="100"
           >
         </div>
-        <div>
+
+        <div class="div">
           <label for="birth">Full date of birth:</label>
           <input
             type="date" id="birth"
             name="birth"
           >
         </div>
-        <div>
+
+        <div class="last__div">
           <label for="agreement">I accept the term of the agreement</label>
           <input
             type="checkbox" id="agreement"
@@ -51,9 +58,11 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div>
+
+        <div class="div">
           <label for="mail">E-mail:</label>
           <input
             type="email" id="mail"
@@ -61,7 +70,8 @@
             required
           >
         </div>
-        <div>
+
+        <div class="last__div">
           <label for="pass">Password:</label>
           <input
             type="password" name="pass"
@@ -69,9 +79,11 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div>
+
+        <div class="div">
           <label for="cats">Do you love cats?</label>
           <input
             type="radio" name="cats"
@@ -84,21 +96,24 @@
           >
           <label for="no">No</label>
         </div>
-        <div>
+
+        <div class="div">
           <label for="color">What is your favorite color?</label>
           <input
             type="color" name="color"
             id="color"
           >
         </div>
-        <div>
+
+        <div class="div">
           <label for="time">What time do you go to bed?</label>
           <input
             type="time" name="time"
             id="time"
           >
         </div>
-        <div>
+
+        <div class="div">
           <label for="car">What are your favorite brand of cars?</label>
           <select
             name="car" id="car"
@@ -109,7 +124,8 @@
             <option value="lada">Lada</option>
           </select>
         </div>
-        <div>
+
+        <div class="last__div">
           <label for="rate">How do you rate our work?</label>
           <input
             type="range" name="rate"
@@ -117,9 +133,11 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div>
+
+        <div class="div">
           <label for="comment">Comments:</label>
           <textarea
             name="comment" id="comment"
@@ -127,7 +145,8 @@
             minlength="0" maxlength="100">
           </textarea>
         </div>
-        <div>
+
+        <div class="last__div">
           <label for="recommend">Would you recommend us?</label>
           <select
             name="recommend" id="recommend"
@@ -137,8 +156,9 @@
           </select>
         </div>
       </fieldset>
+
+      <input type="submit" value="Submit">
+
     </form>
-    <input type="submit" value="Submit">
-    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
