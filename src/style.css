@@ -1,11 +1,11 @@
 /* body {
   margin: 0;
 } */
-div {
+.div {
   margin-bottom: 10px ;
 }
 
-fieldset {
+.fieldset {
   margin-bottom: 20px;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
